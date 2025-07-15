@@ -25,11 +25,17 @@ try:
     time.sleep(8)
     driver.get('https://www.instagram.com/explore/search/keyword/?q=%23%EC%97%AC%ED%96%89')
     time.sleep(10)
-    blog= "/html/body/div[1]/div/div/div[2]/div/div/div[1]/div[1]/div[1]/section/main/div/div/div/div[1]/div[1]/div/a"
+    blog = "/html/body/div[1]/div/div/div[2]/div/div/div[1]/div[1]/div[1]/section/main/div/div/div/div[1]/div[1]/div/a"
     insta_blog = driver.find_element(By.XPATH, blog)
-    insta_blog.click()
-    driver.get("https://www.instagram.com/p/DJMR4fdPg1w/")
+
+    # 썸네일 클릭 전 href 가져오기
+    post_url = insta_blog.get_attribute("href")
+    print("게시물 URL:", post_url)
+
+    # 해당 게시물로 직접 이동
+    driver.get(post_url)
     time.sleep(9)
+
 
     actions = ActionChains(driver)
     heart_xpath = "/html/body/div[1]/div/div/div[2]/div/div/div[1]/div[1]/div[1]/section/main/div/div[1]/div/div[2]/div/div[3]/section[1]/div[1]/span[1]/div/div/div"
