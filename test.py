@@ -9,3 +9,6 @@
 #p
 #//*[@id="wcc_root"]/section/ul/li[1]/div[1]/div[2]/div/p
 #//*[@id="wcc_root"]/section/ul/li/div/div[2]/div/p
+
+#__next > section > div > div.css-1js0bc8 > div:nth-child(2)
+#__next > section > div > div.css-1js0bc8 > div
