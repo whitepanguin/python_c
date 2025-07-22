@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Awesome-pyecharts</title>
+    <script
+      type="text/javascript"
+      src="https://assets.pyecharts.org/assets/v5/echarts.min.js"
+    ></script>
+  </head>
+  <body>
+    <div
+      id="ee24402eefed48de9c41a54cc4fd14e7"
+      class="chart-container"
+      style="width: 600px; height: 400px"
+    ></div>
+    <script>
+      var chart_ee24402eefed48de9c41a54cc4fd14e7 = echarts.init(
+        document.getElementById("ee24402eefed48de9c41a54cc4fd14e7"),
+        "white",
+        { renderer: "canvas" }
+      );
+      var option_ee24402eefed48de9c41a54cc4fd14e7 = {
+        backgroundColor: "white",
+        animation: true,
+        animationThreshold: 2000,
+        animationDuration: 1000,
+        animationEasing: "cubicOut",
+        animationDelay: 0,
+        animationDurationUpdate: 300,
+        animationEasingUpdate: "cubicOut",
+        animationDelayUpdate: 0,
+        aria: {
+          enabled: false,
+        },
+        color: [
+          "#5470c6",
+          "#91cc75",
+          "#fac858",
+          "#ee6666",
+          "#73c0de",
+          "#3ba272",
+          "#fc8452",
+          "#9a60b4",
+          "#ea7ccc",
+        ],
+        series: [
+          {
+            type: "pie",
+            name: "count",
+            colorBy: "data",
+            legendHoverLink: true,
+            selectedMode: false,
+            selectedOffset: 10,
+            clockwise: true,
+            startAngle: 90,
+            minAngle: 0,
+            minShowLabelAngle: 0,
+            avoidLabelOverlap: true,
+            stillShowZeroSum: true,
+            percentPrecision: 2,
+            showEmptyCircle: true,
+            emptyCircleStyle: {
+              color: "lightgray",
+              borderColor: "#000",
+              borderWidth: 0,
+              borderType: "solid",
+              borderDashOffset: 0,
+              borderCap: "butt",
+              borderJoin: "bevel",
+              borderMiterLimit: 10,
+              opacity: 1,
+            },
+            data: [
+              {
+                name: "\uba54\uac00\ucee4\ud53c",
+                value: 148,
+              },
+              {
+                name: "\ube7d\ub2e4\ubc29",
+                value: 93,
+              },
+              {
+                name: "\uc62c\ub9ac\ube0c\uc601",
+                value: 74,
+              },
+              {
+                name: "\uc774\ub514\uc57c",
+                value: 87,
+              },
+              {
+                name: "\ucef4\ud3ec\uc988\ucee4\ud53c",
+                value: 86,
+              },
+            ],
+            radius: ["20%", "60%"],
+            center: ["50%", "50%"],
+            label: {
+              show: true,
+              position: "outer",
+              margin: 8,
+              formatter: "{b}:{d}%",
+              valueAnimation: false,
+            },
+            labelLine: {
+              show: true,
+              showAbove: false,
+              length: 15,
+              length2: 15,
+              smooth: false,
+              minTurnAngle: 90,
+              maxSurfaceAngle: 90,
+            },
+            rippleEffect: {
+              show: true,
+              brushType: "stroke",
+              scale: 2.5,
+              period: 4,
+            },
+          },
+        ],
+        legend: [
+          {
+            data: [
+              "\uba54\uac00\ucee4\ud53c",
+              "\ube7d\ub2e4\ubc29",
+              "\uc62c\ub9ac\ube0c\uc601",
+              "\uc774\ub514\uc57c",
+              "\ucef4\ud3ec\uc988\ucee4\ud53c",
+            ],
+            selected: {},
+            show: true,
+            right: "0%",
+            orient: "vertical",
+            padding: 5,
+            itemGap: 10,
+            itemWidth: 25,
+            itemHeight: 14,
+            backgroundColor: "transparent",
+            borderColor: "#ccc",
+            borderRadius: 0,
+            pageButtonItemGap: 5,
+            pageButtonPosition: "end",
+            pageFormatter: "{current}/{total}",
+            pageIconColor: "#2f4554",
+            pageIconInactiveColor: "#aaa",
+            pageIconSize: 15,
+            animationDurationUpdate: 800,
+            selector: false,
+            selectorPosition: "auto",
+            selectorItemGap: 7,
+            selectorButtonGap: 10,
+          },
+        ],
+        tooltip: {
+          show: true,
+          trigger: "item",
+          triggerOn: "mousemove|click",
+          axisPointer: {
+            type: "line",
+          },
+          showContent: true,
+          alwaysShowContent: false,
+          showDelay: 0,
+          hideDelay: 100,
+          enterable: false,
+          confine: false,
+          appendToBody: false,
+          transitionDuration: 0.4,
+          textStyle: {
+            fontSize: 14,
+          },
+          borderWidth: 0,
+          padding: 5,
+          order: "seriesAsc",
+        },
+        title: [
+          {
+            show: true,
+            text: "\ucee4\ud53c \ud504\ub80c\ucc28\uc774\uc988\uc758 \uc785\uc810\uc804\ub7b5\uc740 \uacfc\uc5f0 \uc2a4\ud0c0\ubc85\uc2a4 \uc606\uc778\uac00?",
+            target: "blank",
+            subtext: "100m \uc774\ub0b4 \ub9e4\uc7a5\uc218",
+            subtarget: "blank",
+            padding: 5,
+            itemGap: 10,
+            textAlign: "auto",
+            textVerticalAlign: "auto",
+            triggerEvent: false,
+          },
+        ],
+      };
+      chart_ee24402eefed48de9c41a54cc4fd14e7.setOption(
+        option_ee24402eefed48de9c41a54cc4fd14e7
+      );
+    </script>
+  </body>
+</html>
